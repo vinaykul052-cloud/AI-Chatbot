@@ -1,0 +1,78 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "good morning", "good evening", "is anyone there"],
+      "responses": ["Hello! Welcome to our store. How can I help you today?", "Hi there! What can I do for you?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you later", "take care", "talk to you soon"],
+      "responses": ["Goodbye! Have a great day!", "Thanks for visiting. See you soon!"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you", "that was helpful", "great help", "appreciate it"],
+      "responses": ["You're welcome!", "Happy to help!"]
+    },
+    {
+  "tag": "order_tracking",
+  "context_set": "awaiting_order_id",
+  "patterns": [
+    "where is my order",
+    "track my order",
+    "order status",
+    "check order status",
+    "when will my order arrive",
+    "check my delivery",
+    "mera order kahan hai",
+    "mera order kab tak ayega",
+    "mera saaman abhi kahan pahuncha hai"
+  ],
+  "responses": [
+    "You can track your order from the 'My Orders' section using your order ID. Do you have your order ID?"
+  ]
+},
+{
+  "tag": "order_id_yes",
+  "context_required": "awaiting_order_id",
+  "patterns": ["yes", "yes i have it", "haan", "haan hai", "i have my order id", "mere pass order id hai", "i have order id", "haan mere pass hai"],
+  "responses": [
+    "Great! Open 'My Orders', select your order, and you'll see live tracking there."
+  ]
+},
+{
+  "tag": "order_id_no",
+  "context_required": "awaiting_order_id",
+  "patterns": ["i have not my order id","i have not order id", "no", "mere pass order id nahi hai", "nahi", "nahi hai", "i dont have order id",  "i dont have it", "nahi hai"],
+  "responses": [
+    "No problem. You can find your order ID in the confirmation email or SMS. You can also contact support at support@example.com."
+  ]
+},
+  
+    {
+      "tag": "payment_methods",
+      "patterns": ["what payment methods do you accept", "can i pay by card", "do you accept upi", "cash on delivery available", "how can i pay"],
+      "responses": ["We accept UPI, credit/debit cards, net banking, and cash on delivery."]
+    },
+    {
+      "tag": "delivery_time",
+      "patterns": ["how long does delivery take", "delivery time", "when will i get my product", "shipping time", "how many days for delivery"],
+      "responses": ["Standard delivery takes 3 to 5 working days. Express delivery takes 1 to 2 days."]
+    },
+    {
+      "tag": "contact_support",
+      "patterns": ["how can i contact support", "customer care number", "talk to a human", "i need help from an agent", "support email"],
+      "responses": ["You can reach our support team at support@example.com or call 1800-123-456, 9 AM to 6 PM."]
+    },
+    
+      
+    {
+        "tag": "return_exchange_policy",
+        "patterns":["how can i return a product", "return policy", "i want to return an item", "can i get a refund", "how to send back my order","Can I return product", "kya main product return kar skta hoon","Return krne ka kya process hai?", "what is the return process?","can i exchange it?","mujhe size badalna hai, exchange ho jayega?","how many days do i get refund","Refund kitne din mei  ilta hai?"],
+        "responses":["You can return any product within 7 days of delivery. Go to 'My Orders' and click 'Return'. Refund is processed in 5 to 7 working days.","Humari policy ke mutabik, aap delivery ke 7 din ke andar kisi bhi product ko return ya exchange kar sakte hain. Bas dhyan rahe ki product unused ho aur uski original tag/packaging salamat ho."]
+
+
+    }
+  ]
+}
