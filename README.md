@@ -58,3 +58,5 @@ Open http://127.0.0.1:5000 in your browser.
 
 ## Author
 [VK]
+## Output<img width="497" height="701" alt="image" src="https://github.com/user-attachments/assets/2f9eb581-74d9-481f-8fe8-da66df51fa4e" />
+
