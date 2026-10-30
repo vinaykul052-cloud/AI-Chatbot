@@ -57,4 +57,4 @@ Open http://127.0.0.1:5000 in your browser.
 - Admin dashboard to review fallback queries and add new intents
 
 ## Author
-[Your Name]
+[VK]
